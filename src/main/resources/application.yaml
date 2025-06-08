@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: metadata-extractor
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: secret
+  jpa:
+    hibernate:
+      ddl-auto: update
+#    url: jdbc:h2:mem:test
+#    driverClassName: org.h2.Driver
+#    username: sa
+#    password: secret
+#  h2:
+#    console:
+#      enabled: true
+#  config:
+#    import: "optional:configserver:http://localhost:8088"
+#
+#server:
+#  port: 8080
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
