@@ -21,8 +21,8 @@ public class SchemaExtractorApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:5173", "https://4ba6-104-28-205-72.ngrok-free.app")
-//                        .allowedOrigins("https://7f378495.metadata-extractor-fe.pages.dev/")
+                        .allowedOrigins("http://localhost:5173", "https://*.pages.dev", "http://*.workers.dev", "http://test.2uan.me", "https://*2uan.me", "http://*.workers.dev", "http://*2uan.me", "http://*.2uan.me/")
+//                        .allowedOrigins("")
                         .allowedMethods("*")
                         .allowedHeaders("*")
                         .allowCredentials(true)

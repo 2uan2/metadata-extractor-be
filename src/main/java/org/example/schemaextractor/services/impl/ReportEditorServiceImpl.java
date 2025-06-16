@@ -94,7 +94,8 @@ public class ReportEditorServiceImpl implements ReportEditorService {
     @Override
     public CatalogEntity createCatalog(Long reportId, CatalogEntity catalogEntity) {
         Optional<ReportEntity> report = reportRepository.findById(reportId);
-        if (report.isEmpty()) throw new ReportNotFoundException("Can't find report with id " + reportId + " to create catalog");
+        if (report.isEmpty())
+            throw new ReportNotFoundException("Can't find report with id " + reportId + " to create catalog");
         catalogEntity.setReport(report.get());
         catalogEntity.setId(null);
         catalogEntity.setTables(null);
